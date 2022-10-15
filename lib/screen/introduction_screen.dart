@@ -1,6 +1,8 @@
 import 'package:chat_app_using_getx/models/intro_models.dart';
+import 'package:chat_app_using_getx/screen/number_screen.dart';
 import 'package:chat_app_using_getx/widgets/intro_view.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class IntroductionScreen extends StatelessWidget {
@@ -71,7 +73,9 @@ class IntroductionScreen extends StatelessWidget {
               child: Material(
                 color: Colors.transparent,
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(const NumberScreen());
+                  },
                   borderRadius: BorderRadius.circular(24),
                   child:const Center(
                     child: Text(
